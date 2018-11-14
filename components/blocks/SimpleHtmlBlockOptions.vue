@@ -35,8 +35,7 @@
                     ></codemirror>
                 </no-ssr>
             </keep-alive>
-            <v-btn block @click.native="switchEditor">{{(visualEditor) ? 'Switch to text mode' : 'Switch to visual
-                mode'}}
+            <v-btn block @click.native="switchEditor">{{(visualEditor) ? 'Switch to text mode' : 'Switch to visual mode'}}
             </v-btn>
         </v-card-text>
     </v-card>
