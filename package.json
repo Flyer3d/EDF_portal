@@ -5,7 +5,7 @@
   "author": "Matveev Alexey",
   "private": true,
   "scripts": {
-    "dev": "cross-env TARGET=supp PORT=3333 nuxt ",
+    "dev": "cross-env TARGET= PORT=3333 nuxt ",
     "build": "cross-env TARGET= nuxt build",
     "start": "HOST=0.0.0.0 PORT=3333 nuxt start",
     "pmhoststart": "cross-env NODE_ENV=production HOST=0.0.0.0 PORT=3333 pm2 start ./node_modules/nuxt/bin/nuxt-start -i max --attach",

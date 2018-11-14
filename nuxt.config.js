@@ -1,32 +1,9 @@
 const config = require('yaml-config');
-// const _ = require('lodash');
 const gui = config.readConfig('./config/gui.yaml', 'ru');
 
-// const roles = [ 'pages', 'admin' ];
-
-var title, apiBase, base;
-if (process.env.TARGET === 'commission') {
-    title = 'Рабочее место';
-    apiBase = 'http://178.208.147.158:49999/api';
-    base = '/comission/';
-} else if (process.env.TARGET === 'supp') {
-    title = 'AVK Коммьюникейшнз. Служба поддержки';
-    apiBase = 'http://localhost:5000/api';
-    // apiBase = 'http://192.168.137.93:5000/api';
-    // apiBase = 'http://5.8.181.27:5000/api';
-    // apiBase = 'https://wbifund.org:5001/api';
-    // apiBase = 'http://178.208.147.158:49998/api';
-    base = '/supp/';
-} else if (process.env.TARGET === 'wbif') {
-    title = 'WBI Fund portal';
-    apiBase = 'https://5.8.181.27:5001/api';
-    base = '/portal/';
-} else {
-    title = 'AVK Коммьюникейшнз. Тестовая платформа';
-    // apiBase = 'http://localhost:5000/api';
-    apiBase = 'http://178.208.147.158:49998/api';
-    base = '';
-}
+var title = 'Code demo';
+var apiBase = 'http://XXX.XXX.XXX.XXX:XXXXX/api';
+var base = '/';
 
 module.exports = {
     mode: 'spa',
@@ -40,27 +17,7 @@ module.exports = {
     */
     router: {
         middleware: 'check-auth',
-        base: base // ,
-        // extendRoutes (routes, resolve) {
-        //     routes.push({
-        //         path: `/default`,
-        //         name: `default`,
-        //         component: resolve(__dirname, `pages/index.vue`)
-        //     });
-        //     routes.push({
-        //         path: `/default/*`,
-        //         name: `default_all`,
-        //         component: resolve(__dirname, `pages/index.vue`)
-        //     });
-        //     roles.forEach((role) => {
-        //         routes.push({
-        //             path: `/${role}/*`,
-        //             name: `${role}_all`,
-        //             component: resolve(__dirname, `pages/${role}.vue`),
-        //             payload: () => role
-        //         });
-        //     });
-        // }
+        base: base
     },
     // Environment variables
     env: {
@@ -122,7 +79,6 @@ module.exports = {
     /*
     ** Customize the progress bar color
     */
-    // loading: {color: '#3B8070'},
     loading: {
         name: 'chasing-dots',
         color: '#0f7acd',
