@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="368.5px" height="595.279px" viewBox="0 0 368.5 595.279" enable-background="new 0 0 368.5 595.279" xml:space="preserve">
+<title>calendar</title>
+<g id="Layer_2">
+	<g id="Layer_1-2">
+		<path fill="#0F7ACD" d="M329.398,133.863h-42.787V113.39c0-11.307-9.166-20.472-20.473-20.472l0,0
+			c-11.307,0-20.473,9.165-20.473,20.472v20.473H122.833V113.39c0-11.307-9.166-20.472-20.472-20.472l0,0
+			c-11.307,0-20.473,9.165-20.473,20.472v20.473H39.102C17.62,133.749,0.113,151.072,0,172.554c0,0.137,0,0.273,0,0.41V463.26
+			c-0.113,21.482,17.209,38.988,38.691,39.103c0.137,0,0.274,0,0.411,0h290.296c21.481,0.113,38.988-17.21,39.102-38.692
+			c0.001-0.137,0.001-0.273,0-0.41V172.964c0.113-21.481-17.209-38.988-38.691-39.102
+			C329.672,133.862,329.535,133.862,329.398,133.863z M327.556,461.417H40.944V215.751h286.611V461.417z"/>
+		<rect x="81.889" y="277.168" fill="#0F7ACD" width="40.945" height="40.944"/>
+		<rect x="163.778" y="277.168" fill="#0F7ACD" width="40.945" height="40.944"/>
+		<rect x="245.666" y="277.168" fill="#0F7ACD" width="40.945" height="40.944"/>
+		<rect x="81.889" y="359.057" fill="#0F7ACD" width="40.945" height="40.944"/>
+		<rect x="163.778" y="359.057" fill="#0F7ACD" width="40.945" height="40.944"/>
+		<rect x="245.666" y="359.057" fill="#0F7ACD" width="40.945" height="40.944"/>
+	</g>
+</g>
+</svg>

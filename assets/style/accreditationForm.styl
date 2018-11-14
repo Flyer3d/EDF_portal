@@ -1,0 +1,51 @@
+.accreditation-form
+  background-color #f3f4f8
+  width 100%
+  padding 0
+
+  .accreditation-form
+    &__back-btn
+      position fixed
+      left 57px
+      bottom 46px
+      width 113px
+      height 40px
+      z-index 10
+      border: solid 1px #a3a2a7
+
+    &__header
+      padding 72px 128px
+      text-align center
+      height 560px
+      width 912px
+      color white
+
+    &__body
+      padding 56px 128px 96px
+      text-align center
+      color #524f5f
+      @media only screen and (max-width: 1264px)
+        padding 56px 32px
+
+    &__divider
+      width calc(100% + 256px)
+      opacity: 0.22;
+      position: relative;
+      &:before
+        display: block;
+        content: ' ';
+        position: absolute;
+        left: -116px;
+        top 0
+        width calc(100% + 232px)
+        border-bottom 1px solid #4a4757
+      &.dark:before
+        width calc(100% + 232px)
+        border solid 1px #ffffff
+
+    &__files-block
+      border solid 1px #d7d7da
+      width 100%
+      height 100%
+      padding 16px 16px 24px
+      position relative

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="886" height="324" viewBox="0 0 886 324">
+    <defs>
+        <path id="a" d="M0 0h886v324H0z"/>
+        <filter id="b" width="137%" height="133.3%" x="-11.8%" y="-16.2%" filterUnits="objectBoundingBox">
+            <feOffset dx="25" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="19"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.0673218507 0 0 0 0 0.391588743 0 0 0 0 0.643122874 0 0 0 0.609997736 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="c" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#0F7ACD" xlink:href="#a"/>
+        <g fill="#0F7ACD" fill-rule="nonzero" filter="url(#b)" mask="url(#c)">
+            <path d="M103 81L-85 185.063V414h376V185.062L103 81zm0 47.617l139.575 77.258h-279.15L103 128.617zM-43.222 372.375V247.5h41.778v124.875h-41.778zm83.555 0V247.5h41.778v124.875H40.333zm83.556 0V247.5h41.778v124.875h-41.778zm125.333 0h-41.778V247.5h41.778v124.875zM103-3h104v62H103z"/>
+            <path d="M81-3h41v104H81z"/>
+        </g>
+    </g>
+</svg>

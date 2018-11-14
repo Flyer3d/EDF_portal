@@ -1,0 +1,449 @@
+ru:
+  # Настройки кнопок
+  button:
+    login:  'Enter'
+    logout: 'Logout'
+    cancel: 'Cancel'
+    choose: 'Select'
+    create: 'Create'
+    close:  'Close'
+    delete: 'Delete'
+    save:   'Save'
+    submit: 'Submit'
+    accept: 'Accept'
+
+    #    login:  'Войти'
+    #    logout: 'Выйти'
+    #    cancel: 'Отмена'
+    #    choose: 'Выбрать'
+    #    create: 'Создать'
+    #    close:  'Закрыть'
+    #    delete: 'Удалить'
+    #    save:   'Сохранить'
+    #    submit: 'Отправить'
+    #    login:  'Войти'
+    #    accept: 'Применить'
+
+  # Обшие строки для диалогов
+  dialog:
+
+
+  # Шапка сайта
+  header:
+
+  # Шаблон по умолчанию
+  default:
+    drawer:
+      layouts:
+        created:        'Создан:'
+        modified:       'Обновлен:'
+      layoutsListTitle: 'Список загруженных страниц'
+
+      noLayouts:        'Нет загруженных страниц'
+      desktopListBtn:   'Список рабочих столов'
+      saveDesktopBtn:   'Сохранить рабочий стол'
+      saveDesktopDlg:
+        title:          'Сохранить рабочий стол'
+        nameLabel:          'Имя рабочего стола'
+        titleLabel:         'Заголовок рабочего стола'
+      desktopListDlg:
+        title:          'Список рабочих столов'
+        subtitle:       'Сохраненные рабочие столы'
+      deleteDesktopDlg:
+        title:          'Удалить рабочий стол'
+        msg:            'Вы действительно хотите удалить рабочий стол "###"?'
+      leaveLayoutDlg:
+        title:          'Понинуть страницу'
+        msg:            'Вы действительно хотите покинуть страницу без сохранения изменений?'
+
+  app:
+    loadingMsg:         'Загружаем рабочий стол...'
+    loadedMsg:          'Рабочий стол успешно загружен'
+    loadErrorMsg:       'Ошибка загрузки рабочего стола!'
+    savingMsg:          'Сохраняем рабочий стол...'
+    savedMsg:           'Рабочий стол успешно сохранен.'
+    saveErrorMsg:       'Ошибка сохранения рабочего стола!'
+    deletingMsg:        'Удаляем рабочий стол...'
+    deletedMsg:         'Рабочий стол успешно удален.'
+    deleteErrorMsg:     'Ошибка удаления рабочего стола!'
+
+  # Компонент ввода пароля
+  login:
+    title:              'Log In'
+    loginLabel:         'Enter username'
+    loginHint:          'Username must contain at least 3 characters'
+    passwordLabel:      'Enter password'
+    passwordHint:       'Password must contain at least 8 characters'
+    loginStr:           'Username'
+    passwordStr:        'Password'
+    badCredentialsMsg:  'Invalid username / password!'
+    loginErrorMsg:      'Login failed! Please contact your administrator.'
+    #loginLabel:         'Введите имя пользователя'
+    #loginHint:          'Имя пользователя должно содержать не менее 3 символов'
+    #passwordLabel:      'Введите пароль'
+    #passwordHint:       'Пароль должен содержать не менее 8 символов'
+    #loginStr:           'Имя пользователя'
+    #passwordStr:        'Пароль'
+    #badCredentialsMsg:  'Неверное имя пользователя / пароль!'
+    #loginErrorMsg:      'Ошибка входа в систему! Обратитесь к администратору.'
+
+    # Rules
+    passwordErrHint:    'Password must contain at least 8 characters'
+    passwordErr:        'Enter password'
+    loginErrHint:       'Username must contain at least 3 characters'
+    loginErr:           'Enter username'
+
+
+  staticPage:
+    title:                    'Безымянная страница'
+
+  # Компонент рабочег стола
+  desktop:
+    toolbar:
+      reportStr:              'Отчет о состоянии дел'
+    messages:
+      loadingMsg:             'Загружаем страницу...'
+      loadedMsg:              'Страница успешно загружена'
+      loadErrorMsg:           'Ошибка загрузки страницы!'
+      savingMsg:              'Сохраняем страницу...'
+      savedMsg:               'Страница успешно сохранена.'
+      saveErrorMsg:           'Ошибка сохранения страницы!'
+      deletingMsg:            'Удаляем страницу...'
+      deletedMsg:             'Страница успешно удалена.'
+      deleteErrorMsg:         'Ошибка удаления страницы!'
+      creatingMsg:            'Создаем страницу...'
+      createdMsg:             'Страница успешно создана.'
+      createErrorMsg:         'Ошибка создания страницы!'
+    dialogs:
+      deleteLayoutTitle:      'Удалить страницу'
+      deleteLayoutMsg:        'Вы действительно хотите удалить страницу "###"?'
+      layoutListTitle:        'Список страниц'
+      layoutListPublished:    'Опубликованные страницы'
+      layoutListDraft:        'Неопубликованные страницы'
+
+  # Общие настройки для виджетов
+
+  widgetOptionsDlg:
+    title:                    'Настройки виджета'
+    optionsTitle:             'Опции'
+    widgetTitleLabel:         'Заголовок виджета'
+    widgetMenuLabel:          'Локальное меню'
+    widgetModelLabel:         'Класс сущностей'
+    widgetTypeLabel:          'Тип виджета'
+
+  layoutOptionsDlg:
+    title:                    'Настройки страницы "###"'
+    optionsTitle:             'Опции'
+    layoutTitleLabel:         'Заголовок страницы'
+    layoutSlugLabel:          'Человекочитаемый адрес страницы (опционально)'
+    layoutRolesLabel:         'Роли'
+    parentLabel:              'Укажите родительскую страницу (опционально)'
+    categoryLabel:            'Укажите категорию страницы'
+    typeLabel:                'Укажите тип страницы'
+    options:
+      title:                  'Дополнительные опции страницы'
+      colLabel:               'Введите количество стобцов на странице'
+      rowLabel:               'Введите минимальнцю высоту виджета'
+      maxWidthLabel:          'Введите максимальнцю ширину страницы'
+
+  createLayoutCategoryDlg:
+    titleLabel:                 'Название категории'
+    weightLabel:                'Вес категории'
+    fileLabel:                  'аватар'
+    typeLabel:                  'Тип категории'
+    urlLabel:                   'Ссылка'
+    externalUrlLabel:           'Внешняя ссылка'
+    publicLabel:                'Показывать незарегистрированным пользователям'
+
+  filterQueryDlg:
+    title:                    'Параметры фильтрации'
+    addSegment:               'Добавить сегмент'
+    deleteSegment:            'Удалить последний сегмент'
+    segment:
+      prefixLabel:            'Префикс'
+      fieldNameLabel:         'Имя поля'
+      fieldOperatorLabel:     'Оператор'
+      fieldValueLabel:        'Значение поля'
+
+  editEntityDlg:
+    title:                    'Редактируем сущность ###'
+
+  linkSelectDlg:
+    title:                    'Выберите объект'
+    sortLabel:                'Параметры сортировки'
+    refreshList:              'Обновить список сущностей'
+
+  replaceFieldDlg:
+    classLabel:               'Класс сущности'
+    equalLabel:               'Равно полю сущности'
+    replaceLabel:             'Заменить на поле'
+
+  tableWidgetOptions:
+    title:                    'Опции виджета таблицы сущностей'
+    selectFirstLabel:         'Выделять первый элемент после загрузки'
+    userOnlyLabel:            'Показывать только созданные пользователем сущности'
+    expandDocumentationLabel: 'Показывать описание поля по клику (при наличии)'
+    editLabel:                'Включить возможность редактирования сущностей'
+    rowsPerPageLabel:         'Выберите количество строк на странице'
+    linkLabel:                'Привязать к другому виджету'
+    selectMasterWidget:
+      fieldLabel:             'Выберите поле'
+      operatorLabel:          'Выберите оператор'
+      masterWidgetLabel:      'Выберите мастер-виджет'
+      masterFieldLabel:       'Выберите мастер-поле'
+    sortLabel:                'Параметры сортировки'
+    refreshModel:             'Обновить модель'
+
+  listWidgetOptions:
+    title:                    'Опции виджета списка сущностей'
+    selectFirstLabel:         'Выделять первый элемент после загрузки'
+    userOnlyLabel:            'Показывать только созданные пользователем сущности'
+    rowsPerPageLabel:         'Выберите количество строк на странице'
+    sortLabel:                'Параметры сортировки'
+    refreshModel:             'Обновить модель'
+    titleLabel:               'Заголовок'
+    subtitleLabel:            'Подзаголовок'
+    labelLabel:               'Метка'
+    prefixLabel:              'Префикс'
+    linkLabel:                'Привязать к другому виджету'
+    selectMasterWidget:
+      fieldLabel:             'Выберите поле'
+      operatorLabel:          'Выберите оператор'
+      masterWidgetLabel:      'Выберите мастер-виджет'
+      masterFieldLabel:       'Выберите мастер-поле'
+
+  cardWidgetOptions:
+    title:                    'Опции виджета карточки сущности'
+    showModelNameLabel:       'Показывать имена сущностей'
+    editLabel:                'Включить возможность редактирования сущностей'
+    dataSourceLabel:          'Выберите источник данных'
+    selectEntityLabel:        'Выберите сущность'
+    masterWidgetLabel:        'Выберите мастер-виджет'
+    filterLabel:              'Параметры фильтрации'
+    sortLabel:                'Параметры сортировки'
+    refreshModel:             'Обновить модель'
+    connectionList:
+      pageId:                 'Брать id из параметров страницы'
+      firstElem:              'Первый элемент из списка с параметрами фильтрации'
+      lastElem:               'Последний элемент из списка с параметрами фильтрации'
+      listElem:               'Элемент из списка'
+      widgetClassElem:        'Привязать к виджету'
+
+  menuWidgetOptions:
+    title:                    'Опции виджета меню'
+    refreshLabel:             'Обновлять каждые 60 секунд'
+
+  backgroundWidgetOptions:
+    title:                    'Опции виджета фоновой картинки'
+    fileLabel:                'Выберите файл для фоновой картинки'
+
+  filterWidgetOptions:
+    title:                    'Опции виджета фильтрации'
+    addButton:                'Добавить фильтр'
+    deleteButton:             'Удалить фильтр'
+    linkLabel:                'Привязать к другому виджету'
+    masterWidgetLabel:        'Выберите мастер-виджет'
+    refreshModel:             'Обновить модель'
+
+  filterWidgetOptionsSegment:
+    legend:                   'Фильтр ###'
+    newFilterTitle:           'Новый фильтр'
+    titleLabel:               'Заголовок'
+    fieldLabel:               'Выберите поле для фильтрации'
+    typeLabel:                'Выберите тип фильтра'
+    fromLabel:                'Диапазон от:'
+    toLabel:                  'Диапазон до:'
+    stepLabel:                'Шаг диапазона:'
+    typeList:
+      range:                  'Диапазон'
+      textInput:              'Поле ввода'
+      dateRange:              'Диапазн дат'
+      select:                 'Выпадающий список'
+      switch:                 'Переключатель'
+      radio:                  'Радиокнопки'
+
+  buttonsWidgetOptionsSegment:
+    legend:                   'Кнопка ###'
+    newButtonTitle:           'Новая кнопка'
+    titleLabel:               'Заголовок'
+    urlLabel:                 'Адресс перехода'
+    externalLinkLabel:        'Внешняя ссылка'
+    typeLabel:                'Выберите тип кнопки'
+    processLabel:             'Выберите процесс для запуска'
+    paramsLabel:              'Передавать имя и ID связанной сущности'
+    typeList:
+      link:                   'Переход по ссылке'
+      process:                'Запуск процесса'
+
+  buttonsWidgetOptions:
+    title:                    'Опции виджета кнопок--сылок'
+    addButton:                'Добавить кнопку'
+    deleteButton:             'Удалить кнопку'
+    dataSourceLabel:          'Выберите источник данных'
+    selectEntityLabel:        'Выберите сущность'
+    masterWidgetLabel:        'Выберите мастер-виджет'
+    refreshModel:             'Обновить модель'
+    connectionList:
+      noConnection:           'Не привязывать к виджетам'
+      firstElem:              'Первый элемент'
+      lastElem:               'Последний элемент'
+      listElem:               'Элемент из списка'
+      widgetClassElem:        'Привязать к виджету'
+
+  autoStepWidgetOptions:
+    title:                    'Опции виджета Моношага'
+    showModelNameLabel:       'Показывать имена сущностей'
+    processLabel:             'Выберите процесс для запуска'
+    linkLabel:                'Привязать к другому виджету'
+    masterWidgetLabel:        'Выберите мастер-виджет'
+    urlLabel:                 'Адресс перехода'
+    externalLinkLabel:        'Внешняя ссылка'
+    refreshModel:             'Обновить модель'
+    paramsLabel:              'Передавать имя и ID связанной сущности'
+
+  stepWidgetOptions:
+    title:                    'Опции виджета Задачи'
+    showModelNameLabel:       'Показывать имена сущностей'
+    dataSourceLabel:          'Выберите источник данных'
+    selectStepLabel:          'Выберите Задачу'
+    filterLabel:              'Параметры фильтрации'
+    sortLabel:                'Параметры сортировки'
+    masterWidgetLabel:        'Выберите мастер-виджет'
+
+  stepListWidgetOptions:
+    title:                    'Опции виджета списка Задач'
+    selectFirstLabel:         'Выделять первый элемент после загрузки'
+    sortLabel:                'Параметры сортировки'
+    refreshModel:             'Обновить модель'
+    titleLabel:               'Заголовок'
+    subtitleLabel:            'Подзаголовок'
+    labelLabel:               'Метка'
+    prefixLabel:              'Префикс'
+
+
+
+  # Виджет Задачи
+  stepWidget:
+    options:                  ''
+    submitStep:               'Сохранить'
+    noInputModel:             'Нет входной модели'
+    noOutputModel:            'Нет выходной модели'
+    validatingError:          'Не все поля заполнены корректно!'
+    msg:
+      terminatingStep:        'Завершаем Задачу...'
+      stepSuccess:            'Задача успешно завершена'
+      stepError:              'Ошибка завершения Задачи:'
+
+  # Виджет Моношага
+  autoStepWidget:
+    options:                  ''
+    submitStep:               'Сохранить'
+    noInputModel:             'Нет входной модели'
+    noOutputModel:            'Нет выходной модели'
+    validatingError:          'Не все поля заполнены корректно!'
+    msg:
+      terminatingStep:        'Завершаем Задачу...'
+      stepSuccess:            'Задача успешно завершена'
+      stepError:              'Ошибка завершения Задачи:'
+
+  listWidget:
+    noTitleLabel:             'Не выбрано поле для заголовка'
+    noDataLabel:              'Нет данных'
+
+  tableWidget:
+    noDataLabel:              'Нет данных'
+
+  menuWidget:
+    msg:
+      startingProcess:        'Запускаем процесс "###"...'
+      processSuccess:         'Процесс "###" успешно запущен!'
+      processError:           'Ошибка запуска процесса "###":'
+
+  buttonsWidget:
+    msg:
+      startingProcess:        'Запускаем процесс "###"...'
+      processSuccess:            'Процесс "###" успешно запущен!'
+      processError:              'Ошибка запуска процесса "###":'
+
+  stepListWidget:
+    options:                  ''
+    refreshStepList:          'Обновить'
+    totalSteps:               'Всего Задач: ###'
+
+#############################################################################
+# Общие настройки для виджетов
+  blockOptionsDlg:
+    title:                    'Настройки блока'
+    optionsTitle:             'Опции'
+    blockTitleLabel:          'Заголовок блока'
+    blockTypeLabel:           'Тип блока'
+
+  simpleTextBlockOptions:
+    titleLabel:               'Заголовок'
+    subtitleLabel:            'Подзаголовок'
+    textLabel:                'Текстовый блок'
+
+  simpleHtmlBlockOptions:
+    titleLabel:               'Заголовок'
+    subtitleLabel:            'Подзаголовок'
+    textLabel:                'Текстовый блок'
+
+  projectMapBlockOptions:
+    title:                    'Настройка блока с картой проектов'
+    titleLabel:               'Заголовок'
+    fullScreenLabel:          'Разворачивать во весь экран'
+    marginTopLabel:           'Отступ сверху'
+    zIndexLabel:              'Текстовый блок'
+
+  projectListBlockOptions:
+    title:                    'Настройка блока со списком проектов'
+    titleLabel:               'Заголовок'
+    fullScreenLabel:          'Разворачивать во весь экран'
+
+  projectInfoBlockOptions:
+    title:                    'Настройка блока информации о проекте'
+    titleLabel:               'Заголовок'
+
+  monoStepBlockOptions:
+    title:                    'Опции виджета Моношага'
+    showModelNameLabel:       'Показывать имена сущностей'
+    processLabel:             'Выберите процесс для запуска'
+    urlLabel:                 'Адресс перехода'
+    externalLinkLabel:        'Внешняя ссылка'
+    refreshModel:             'Обновить модель'
+    paramsLabel:              'Передавать имя и ID связанной сущности'
+
+  monoStepBlock:
+    submitStep:               'Сохранить'
+    noInputModel:             'Нет входной модели'
+    noOutputModel:            'Нет выходной модели'
+    validatingError:          'Не все поля заполнены корректно!'
+    msg:
+      terminatingStep:        'Завершаем Задачу...'
+      stepSuccess:            'Задача успешно завершена'
+      stepError:              'Ошибка завершения Задачи:'
+##############################################################################
+#  WidgetFields
+
+  widgetField:
+    requiredError:            'Обязательное поле!'
+    regexpError:              'Некорректно заполненное поле!'
+    minLengthError:           'Должно быть не менее ### символов!'
+    maxLengthError:           'Должно быть не более ### символов!'
+
+  widgetDateField:
+    badDateError:             'Неправильный формат даты!'
+    label:                    'dd/mm/yyyy'
+
+  widgetFileField:
+    label:                    'Выберите файл'
+
+  widgetImageField:
+    label:                    'Выберите изображение'
+
+##############################################################################
+#  FilterFields
+
+  filterField:
+    textInputPlaceholder:     'Введите текст для фильтрации'
+    textInputHint:            'Введите текст для фильтрации'

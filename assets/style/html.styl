@@ -1,0 +1,213 @@
+.html-container.ql-editor
+  min-height 1px
+
+.html-container
+  margin 20px
+  font: 300 18px "Roboto"
+  line-height 1.4
+
+  .color-success
+    color: #4CAF50
+  .color-error
+    color: #ff5252
+  .color-warning
+    color: #FFC107
+  .color-info
+    color: #2196F3
+
+  .float-left
+    float left
+
+  .float-right
+    float right
+
+  .example
+    border: 2px solid #f5f5f1;
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 0;
+    margin: 0 -20px 40px -20px;
+
+  .example pre
+    border-radius: 0 0 10px 10px;
+    margin: 0 -20px;
+    overflow: auto;
+
+  .example code
+    padding: 15px;
+    max-height: 200px;
+    font-size: 14px;
+    font-family: "Consolas", courier, typewriter, monospace;
+    display: block;
+    overflow-x: auto;
+    color: #333;
+    background: #f8f8f8;
+
+  //table
+  //  font-size: 14px;
+  //  border-collapse: collapse;
+  //  text-align: left;
+  //  width: 100%;
+  //  line-height: 1.6;
+  //  margin: 20px 0 40px;
+
+  a, p
+    padding: 20px 0 0 0
+    margin 0
+    text-decoration none
+
+  .lead
+    font-size 18px
+    line-height 1.6
+
+  .text-left
+  .ql-align-left
+    text-align left
+
+  .text-center
+  .ql-align-center
+    text-align center
+
+  .text-right
+  .ql-align-right
+    text-align right
+
+  .text-justify
+  .ql-align-justify
+    text-align justify
+
+  ul
+    margin 0
+    padding 0
+
+  ul li
+    display block
+    position relative
+    padding-left 25px
+    margin-bottom 10px
+
+  ul li:before
+    content: "\f105"
+    font: normal 15px "FontAwesome";
+    display: inline-block
+    width: 1em
+    margin-left: -1em
+    color: #dd4b57
+
+  table
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: left;
+    width 100%
+    line-height 1.6
+    margin 20px 0 40px
+
+    p, div
+      padding 0
+      white-space normal
+
+  td, th
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: #ccc
+    padding: 10px 20px
+    white-space: wrap
+    width 50%
+
+  td:last-child, th:last-child
+    border-width: 0 0px 1px 0;
+
+  thead
+    background-color #eeeeaa
+    td, th
+      border 1px solid #fff
+
+  ul
+    margin 0
+    padding 0
+
+  ul li
+    display block
+    position relative
+    padding-left 25px
+    margin-bottom 4px
+
+  ul li:before
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0
+    width: 8px;
+    height: 8px;
+    background: #ff5252
+    border-radius: 4px;
+
+  ol
+    counter-reset li
+    list-style none
+    padding 0
+    margin 0
+
+  ol li
+    display block
+    position relative
+    //padding-left 25px
+    //margon-bottom 4px
+    margin: 0 0 6px 40px;
+    padding: 12px 8px;
+
+  ol li:before
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    //top: 7px;
+    left: -35px;
+    text-align: center;
+    line-height: 24px;
+    width: 24px;
+    height: 24px;
+    background: #ff5252
+    font-style: normal;
+    border-radius: 1em;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+
+  dl
+    margin 0
+
+  dt
+    color: #000000
+    display: inline-block
+    width: 23%
+    margin: 0 0 10px
+    font: 700 18px 'PT Sans'
+    vertical-align: top
+    box-sizing: border-box
+    break-after: avoid
+    break-inside: avoid
+    position: relative
+
+    br
+      display: none
+
+    .weekday
+      display: inline
+
+  dd
+    color: #000000
+    display: inline-block
+    width: 76%
+    margin: 0 0 30px
+    font-size: 15px
+    line-height: 1.6
+    break-before: avoid
+    break-inside: avoid
+    break-after: auto
+
+  dt, dd
+    +below(900px)
+      width 100%
+
+
+

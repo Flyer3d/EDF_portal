@@ -1,0 +1,76 @@
+.application.theme--light
+  background: #fff
+
+table.table
+  thead, tbody
+    td, th
+      &:not(:nth-child(1)), &:first-child
+        padding: 0 12px
+
+
+.widget
+  .card__title
+    margin-bottom 0
+    padding-bottom 0
+
+  .list__tile__sub-title
+    line-height: 12px
+    margin-bottom 4px
+    font-size: 12px
+
+  .list__tile
+    font-size 13px
+
+  .list--three-line .list__tile
+    height 72px
+
+  .list__tile--avatar
+    height 32px
+
+  .widget-field
+    .input-group--text-field.input-group--dirty.input-group--select label,
+    .input-group--text-field.input-group--dirty:not(.input-group--textarea) label
+    .input-group--text-field:not(.input-group--single-line).input-group--focused:not(.input-group--textarea) label,
+    .input-group--text-field:not(.input-group--single-line).input-group--placeholder:not(.input-group--textarea) label {
+      transform: translate(0, -10px) scale(0.75);
+    }
+
+    .input-group:not(.input-group--textarea).input-group:not(.checkbox).input-group:not(.radio-group)
+      //height 52px
+      height 36px
+      padding-top 6px
+
+    .input-group label
+      top 4px
+      font-size 14px
+
+    .input-group__input
+      min-height: 18px
+      input
+        height: 18px
+        font-size 14px
+        align-self: flex-end;
+
+    .input-group
+      padding 8px 0 0
+
+    .input-group__details
+      min-height 0
+
+  .input-group.input-group--textarea:not(.input-group--full-width) .input-group__input
+    border 1px solid #aaa
+    padding 8px
+
+
+  table.table tbody td
+  table.table thead th
+    padding 0 8px
+    height 32px
+
+  table.table tbody td:last-child
+  table.table thead th:last-child
+    padding 0 16px 0 0
+
+  table.table thead th:first-child
+    padding 0 24px
+
