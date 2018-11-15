@@ -130,41 +130,6 @@ const modules = {
 
 const actions = {
     // //////////////////////////////MODEL SECTION////////////////////////////////////
-    async downloadFile ({ commit, dispatch }, payload) {
-        console.log('[widget/loadItem] Downloading file... ');
-        console.dir(payload);
-        const url = `${process.env.apiBase}/utils/downloadFile`;
-        if (payload.fileName) {
-            try {
-                const res = await axios({
-                    url,
-                    method: 'GET',
-                    responseType: 'blob', // important
-                    // responseType: 'arraybuffer',
-                    headers: {'Content-Type': 'multipart/form-data', 'Authorization': axios.defaults.headers.common['Authorization']},
-                    params: payload
-                });
-                console.log('Response resived!!!');
-                console.dir(res);
-                const headers = res.headers;
-                const blob = new Blob([res.data], {type: headers['content-type']});
-                const downloadUrl = window.URL.createObjectURL(blob);
-                const link = document.createElement('a');
-                link.href = downloadUrl;
-                link.setAttribute('download', payload.fileName);
-                document.body.appendChild(link);
-                link.click();
-
-                console.log('[widget/loadItem] File downloaded!!');
-                console.dir(res.data);
-            } catch (err) {
-                console.error('[widget/loadItem] Error downloading file !');
-                console.dir(err);
-            }
-        }
-    },
-
-    // //////////////////////////////MODEL SECTION////////////////////////////////////
     async loadItem ({ commit, dispatch, state }, payload) {
         console.log('[widget/loadItem] Loading... ');
         console.dir(payload);
@@ -191,14 +156,6 @@ const actions = {
                            let replaceRes;
                            if (field.replaceEqualFieldName) {
                                const replaceUrl = `${process.env.apiBase}/widget`;
-                               // console.log('!!!!!!!!!!!!!!!!!! replaceEqualFieldName with param:');
-                               // console.dir({
-                               //     model: field.replaceModelName,
-                               //     pageNumber: 1,
-                               //     pageSize: 1,
-                               //     orderBy: '',
-                               //     query: `[${field.replaceEqualFieldName}] = '${resItem.object[field.name]}'`
-                               // });
                                let id = resItem.object[field.name];
                                if (field.type === 'DROPDOWN_LINK') {
                                    const splitValue = String(id).split('::');
@@ -722,7 +679,7 @@ const actions = {
         }
     },
 
-    async doAction ({ commit, dispatch, state }, { actionId, entityInstance }) {
+    async doAction ({ commit, state }, { actionId, entityInstance }) {
         commit('ACTION_STARTED');
         const url = `${process.env.apiBase}/widget/action/${actionId}`;
         try {
@@ -787,11 +744,6 @@ const mutations = {
     },
     'LIST_LOADING' (st) {
         st.list = [];
-        // st.listPaging = {
-        //     totalRows: 0,
-        //     pageSize: 0,
-        //     pageNumber: 0
-        // };
         st.listLoadStatus = 'LOADING';
     },
     'LIST_LOADED' (st, data) {
@@ -895,7 +847,6 @@ const mutations = {
     unregister (st) {
         console.log('[block/unregister] Block UNREGISTER!!!');
         st.isAlive = false;
-        // this.commit(`${st.id}/model/CLEAR`);
         for (let segmentId in st.inputWidgetSegments) {
             this.commit(`${st.id}/${segmentId}/unregister`);
             this.unregisterModule([st.id, segmentId]);

@@ -188,9 +188,6 @@ const mutations = {
         this.commit(`${id}/unregister`);
         this.unregisterModule(id);
         delete st.layout.widgets[id];
-        // ToDo: Проверить!
-        // Vue.set(st.layout.widgets, id, undefined);
-
         Vue.set(st, 'isChanged', true);
         return true;
     },

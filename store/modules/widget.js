@@ -158,14 +158,6 @@ const actions = {
                            let replaceRes;
                            if (field.replaceEqualFieldName) {
                                const replaceUrl = `${process.env.apiBase}/widget`;
-                               // console.log('!!!!!!!!!!!!!!!!!! replaceEqualFieldName with param:');
-                               // console.dir({
-                               //     model: field.replaceModelName,
-                               //     pageNumber: 1,
-                               //     pageSize: 1,
-                               //     orderBy: '',
-                               //     query: `[${field.replaceEqualFieldName}] = '${resItem.object[field.name]}'`
-                               // });
                                let id = resItem.object[field.name];
                                if (field.type === 'DROPDOWN_LINK') {
                                    const splitValue = String(id).split('::');
@@ -713,10 +705,6 @@ const actions = {
                                 console.dir(err);
                                 throw new Error('Cannot save file');
                             }
-                            console.log('**************** SUCCESS!!!!!');
-                            // const filePath = _.get(file, 'data.filePath'); // Get url from response
-                            // const fileName = filePath.split('://')[1];
-                            // item.value = `/img/${fileName}`;
                             item.value = _.get(file, 'data.filePath');
                         }
                         return item;
@@ -811,10 +799,6 @@ const actions = {
                         console.dir(err);
                         throw new Error('Cannot save file');
                     }
-                    console.log('**************** SUCCESS!!!!!');
-                    // const filePath = _.get(file, 'data.filePath'); // Get url from response
-                    // const fileName = filePath.split('://')[1];
-                    // item.value = `/img/${fileName}`;
                     item.value = _.get(file, 'data.filePath');
                 }
                 return item;
@@ -937,11 +921,6 @@ const mutations = {
     },
     'LIST_LOADING' (st) {
         st.list = [];
-        // st.listPaging = {
-        //     totalRows: 0,
-        //     pageSize: 0,
-        //     pageNumber: 0
-        // };
         st.listLoadStatus = 'LOADING';
     },
     'LIST_LOADED' (st, data) {

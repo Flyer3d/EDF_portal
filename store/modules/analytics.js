@@ -5,7 +5,6 @@ const baseModelName = 'Статья';
 const defaultFilterOptions = {
     title: '',
     country: null,
-    // region: null,
     industry: null
 };
 

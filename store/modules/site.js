@@ -45,7 +45,6 @@ const initActions = ['loadIndustryList', 'loadCountryList', 'loadRolesList'];
 const actions = {
     async loadData ({ commit, dispatch }) {
         console.log('[site/loadData] Loading... ');
-        // const url = `${process.env.apiBase}/widget`;
         try {
             await Promise.all(initActions.map(action => dispatch(action)));
             console.dir('[site/loadData] All data loaded!');
@@ -107,22 +106,6 @@ const actions = {
                         query: ''
                     }
                 });
-                //
-                // Добавляем totalProject в каждую запись!
-                //
-                // await Promise.all(res.data.rows.map(async (item) => {
-                //     const projectSrc = await axios.get(url, {
-                //         params: {
-                //             model: 'Проект',
-                //             pageNumber: 1,
-                //             pageSize: 1,
-                //             orderBy: '',
-                //             query: `[Отрасль] = ${item.entityInstancePk.entityInstanceId}`
-                //         }
-                //     });
-                //     item.object.totalProjects = _.get(projectSrc, 'data.paging.totalRows');
-                // }));
-                // const resList = _.get(res, 'data.rows', []).map(item => _.isEmpty(item.object) ? null : item.object);
                 const resList = _.get(res, 'data.rows', []).sort((a, b) => a.entityDesc.localeCompare(b.entityDesc))
                     .map(item => {
                     const icon = item.entityIcon;
@@ -182,7 +165,6 @@ const actions = {
                     }
                 });
                 console.log('[site/loadCountryList] Region list loaded!');
-                // const resList = _.get(res, 'data.rows', []).map(item => _.isEmpty(item.object) ? null : item.object);
                 const resList = _.get(res, 'data.rows', []).sort((a, b) => a.entityDesc.localeCompare(b.entityDesc)).map(item => ({
                     text: item.entityDesc,
                     value: item.entityInstancePk.entityInstanceId
@@ -229,7 +211,6 @@ const actions = {
                 });
                 console.log('[site/loadRegionList] Region list loaded!');
                 console.dir(res.data);
-                // const resList = _.get(res, 'data.rows', []).map(item => _.isEmpty(item.object) ? null : item.object);
                 const resList = _.get(res, 'data.rows', []).sort((a, b) => a.entityDesc.localeCompare(b.entityDesc)).map(item => ({
                     text: item.entityDesc,
                     value: item.entityInstancePk.entityInstanceId

@@ -51,7 +51,6 @@ const templateDesktop = {
 const state = () => ({
     layoutsList: [],
     layoutsTree: {},
-    // layoutsTypeList: [],
     desktopsList: [],
     currentLayoutId: null,
     currentLayoutType: null,

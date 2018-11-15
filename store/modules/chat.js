@@ -116,7 +116,6 @@ const actions = {
             console.dir(chatListSrc);
             let currentChat = {};
             if (projectId) {
-                // currentChat = _.find(chatListSrc, {object: {'Имя собеседника': chatUser, 'Проект': projectId}});
                 currentChat = _.find(chatListSrc, item => {
                     const chatObject = item.object;
                     if (chatObject['Имя собеседника'] === chatUser) {

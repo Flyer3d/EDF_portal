@@ -68,7 +68,6 @@ const actions = {
     },
 
     async takeStep ({ commit }, {fields, entityName, processId, processName}) {
-        // if (!processId) return;
         commit('STEP_LOADING');
         console.log('[action/takeStep] Saving... ');
         console.dir({ fields, entityName, processId, processName });
@@ -152,7 +151,6 @@ const actions = {
     },
 
     async takeSimpleStep ({ commit }, {fields, entityName, processId, processName}) {
-        // if (!processId) return;
         commit('STEP_LOADING');
         console.log('[action/takeSimpleStep] Saving... ');
         console.dir({ fields, entityName, processId, processName });

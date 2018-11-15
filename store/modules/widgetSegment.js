@@ -58,7 +58,7 @@ const actions = {
     },
     // //////////////////////////////MODEL SECTION////////////////////////////////////
     async loadItem ({ commit, dispatch, state }, payload) {
-        console.log(`[widgetSegment/loadItem] Loading model ${payload.model} id = ${payload.id}`);
+        console.log(`[loadItem] Loading model ${payload.model} id = ${payload.id}`);
         console.dir(payload);
         commit('LOADING');
         const id = payload.id;
@@ -67,13 +67,13 @@ const actions = {
 
         try {
             const res = await axios.get(url);
-            console.log('[widgetSegment/loadItem] Data loaded!');
+            console.log('[loadItem] Data loaded!');
             console.dir(res.data);
             if (state.isAlive) {
                 commit('LOADED', _.get(res, 'data.rows[0]'));
             }
         } catch (err) {
-            console.error('[widgetSegment/loadItem] Error loading widget data!');
+            console.error('[loadItem] Error loading widget data!');
             console.dir(err);
             if (state.isAlive) {
                 commit('LOADED', {});
@@ -81,19 +81,19 @@ const actions = {
         }
     },
     async loadList ({ commit, state, dispatch }, payload) {
-        console.log('[widget/loadList] Loading... ');
+        console.log('[loadList] Loading... ');
         console.dir(payload);
         commit('LIST_LOADING');
         const url = `${process.env.apiBase}/widget`;
         try {
             const res = await axios.get(url, { params: payload });
-            console.log('[widget/loadList] List loaded!');
+            console.log('[loadList] List loaded!');
             console.dir(res.data);
             if (state.isAlive) {
                 commit('LIST_LOADED', res.data);
             }
         } catch (err) {
-            console.error('[widget/loadList] Error loading widget list!');
+            console.error('[loadList] Error loading widget list!');
             console.dir(err);
             if (state.isAlive) {
                 commit('LIST_LOADED', {});
@@ -109,7 +109,7 @@ const actions = {
                 commit('MODEL_LOADED', response.data);
             }
         } catch (e) {
-            console.error('Error getting models list!');
+            console.error('[getModel] Error getting models list!');
             console.dir(e);
             if (state.isAlive) {
                 commit('MODEL_LOADED', {});
@@ -172,7 +172,6 @@ const mutations = {
         st.isChanged = true;
     },
     unregister (st) {
-        console.log(`[${st.id}/unregister] widget SEGMENT UNREGISTER!!!!`);
         st.isAlive = false;
     }
 };

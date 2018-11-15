@@ -2,9 +2,6 @@ import _ from 'lodash';
 import axios from 'axios';
 import Vue from 'vue';
 
-// const PROJECT_PART_PROCESS = 'Подать заявку на участие в проекте';
-// const PROJECT_CREATE_PROCESS = 'Подать заявку на публикацию проекта';
-
 const PROJECT_INVITATION_STEP = 'Рассмотреть приглашение';
 const PROJECT_PART_STEP = 'Рассмотреть и принять решение';
 const PROJECT_PUBLISH_REJECTED = 'Проект не опубликован';
@@ -167,36 +164,6 @@ const actions = {
             dispatch('loadNotificationList');
         }
     }
-
-    // async sendMessage ({ state, commit, dispatch, rootGetters }, payload) {
-    //     console.log('[notification/sendMessage] Sending Message with payload:');
-    //     console.dir(payload);
-    //     commit('MESSAGE_STATUS', 'IN_PROGRESS');
-    //     const url = `${process.env.apiBase}/notification/sendMessage`;
-    //     try {
-    //         const currentDate = moment().format();
-    //         await axios.post(url, payload);
-    //         state.messageList.push({
-    //             object: {
-    //                 DT: currentDate,
-    //                 a_sub_userId: rootGetters['login/getUserId'],
-    //                 'Код переписки': state.currentChat['Код переписки'],
-    //                 'Сообщение': payload.message,
-    //                 'Вложение': payload.file,
-    //                 'Внутренняя ссылка': payload.link
-    //             }
-    //         });
-    //         console.log('[notification/sendMessage] Message sended!');
-    //         commit('MESSAGE_STATUS', 'SUCCESS');
-    //         setTimeout(() => {
-    //             dispatch('loadMessageList');
-    //         }, 1500);
-    //     } catch (err) {
-    //         console.error('[notification/sendMessage] Error sending!');
-    //         console.dir(err);
-    //         commit('MESSAGE_STATUS', 'ERROR');
-    //     }
-    // }
 };
 
 const mutations = {
@@ -209,11 +176,6 @@ const mutations = {
         Vue.set(st, `${payload.name}Status`, payload.data ? 'SUCCESS' : 'ERROR');
         Vue.set(st, payload.name, payload.data);
     }
-
-    // 'MESSAGE_STATUS' (st, status) {
-    //     Vue.set(st, 'sendMessageStatus', status);
-    // }
-
 };
 
 export default {

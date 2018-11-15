@@ -266,44 +266,6 @@ const mutations = {
             delete axios.defaults.headers.common['Authorization'];
         }
     }
-
-    // SET_STATUS (st, status) {
-    //    st.status = status;
-    // },
-    // SET_HEADER (st) {
-    //     console.log(`[SET_HEADER] Setting Header!`);
-    //     console.dir(st.user);
-    //    if (st.user.access_token) {
-    //        axios.defaults.headers.common['Authorization'] = `${st.user.token_type} ${st.user.access_token}`;
-    //    } else {
-    //        delete axios.defaults.headers.common['Authorization'];
-    //    }
-    // },
-    // SET_USER (st, payload) {
-    //     console.log('LOGIN save params with payload:');
-    //     console.dir(payload);
-    //     // st.user = payload;
-    //     if (payload) {
-    //         st.user = Object.assign({}, payload);
-    //         st.isLoggedIn = true;
-    //         axios.defaults.headers.common['Authorization'] = `${payload.token_type} ${payload.access_token}`;
-    //     } else {
-    //         st.isLoggedIn = false;
-    //         st.user = Object.assign({}, defaultUser);
-    //         delete axios.defaults.headers.common['Authorization'];
-    //     }
-    // },
-    // SET_PROFILE (st, payload) {
-    //     console.log('[SET_PROFILE] Setting profile to:');
-    //
-    //     st.profile = payload;
-    //     console.dir(st.profile);
-    // },
-    // logout (st) {
-    //     st.isLoggedIn = false;
-    //     delete axios.defaults.headers.common['Authorization'];
-    //     st.login = '';
-    // }
 };
 
 export default {
